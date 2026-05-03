@@ -18,7 +18,7 @@
   --font-body:   'IBM Plex Sans', sans-serif;
   --max-w:      800px;
   --section-px: 48px;
-  --section-py: 120px;
+  --section-py: 100px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -295,6 +295,19 @@ section {
   max-width: var(--max-w);
   margin: 0 auto;
   position: relative;
+}
+
+/* Divisor entre secciones */
+section:not(#hero):not(#contact)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.5;
 }
 
 /* ─── Hero ─── */
@@ -908,7 +921,7 @@ footer p {
 @media (max-width: 900px) {
   :root {
     --section-px: 36px;
-    --section-py: 96px;
+    --section-py: 80px;
   }
 
   .nav-links {
@@ -924,7 +937,7 @@ footer p {
 @media (max-width: 680px) {
   :root {
     --section-px: 24px;
-    --section-py: 88px;
+    --section-py: 72px;
   }
 
   .nav-links {
