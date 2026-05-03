@@ -77,8 +77,11 @@
 </head>
 <body>
 
+  <!-- Skip link para accesibilidad -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
   <!-- ─── Navbar ─── -->
-  <nav id="navbar">
+  <nav id="navbar" aria-label="Navegación principal">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">Javier Delgado</a>
       <ul class="nav-links">
@@ -114,12 +117,15 @@
     </div>
   </nav>
 
+  <!-- ─── Main content ─── -->
+  <main id="main-content">
+
   <!-- ─── Hero ─── -->
   <section id="hero">
     <div class="hero-content">
       <p class="hero-tag">Bucaramanga, Colombia</p>
       <h1 class="hero-name">Javier<br>Delgado</h1>
-      <p class="hero-role"><span class="role-prefix">//</span> DevOps · Cloud Engineer</p>
+      <p class="hero-role">DevOps · Cloud Engineer</p>
       <p class="hero-desc">
         Ingeniero de sistemas con experiencia en administración de servidores, soluciones cloud, seguridad informática y automatización de infraestructura.
       </p>
@@ -128,9 +134,9 @@
   </section>
 
   <!-- ─── About ─── -->
-  <section id="about">
+  <section id="about" aria-labelledby="about-title">
     <p class="section-label">Sobre mí</p>
-    <h2 class="section-title">Quién soy</h2>
+    <h2 class="section-title" id="about-title">Quién soy</h2>
 
     <div class="about-text">
       <p>
@@ -185,9 +191,9 @@
   </section>
 
   <!-- ─── Projects ─── -->
-  <section id="projects">
+  <section id="projects" aria-labelledby="projects-title">
     <p class="section-label">Proyectos</p>
-    <h2 class="section-title">Lo que he construido</h2>
+    <h2 class="section-title" id="projects-title">Lo que he construido</h2>
 
     <ul class="projects-list">
 
@@ -207,7 +213,7 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/jadelje" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             GitHub
           </a>
         </div>
@@ -230,7 +236,7 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/jadelje" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             GitHub
           </a>
         </div>
@@ -252,7 +258,7 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/jadelje" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             GitHub
           </a>
         </div>
@@ -274,7 +280,7 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/jadelje" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             GitHub
           </a>
         </div>
@@ -296,7 +302,7 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/jadelje" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             GitHub
           </a>
         </div>
@@ -318,11 +324,11 @@
         </div>
         <div class="project-links">
           <a href="https://jadelje.github.io/" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Demo
           </a>
           <a href="https://github.com/jadelje" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             GitHub
           </a>
         </div>
@@ -332,9 +338,9 @@
   </section>
 
   <!-- ─── Resume ─── -->
-  <section id="resume">
+  <section id="resume" aria-labelledby="resume-title">
     <p class="section-label">Curriculum</p>
-    <h2 class="section-title">Experiencia & Educación</h2>
+    <h2 class="section-title" id="resume-title">Experiencia & Educación</h2>
 
     <div class="timeline">
       <div class="timeline-col">
@@ -388,9 +394,9 @@
   </section>
 
   <!-- ─── Contact ─── -->
-  <section id="contact">
+  <section id="contact" aria-labelledby="contact-title">
     <p class="section-label">Contacto</p>
-    <h2 class="section-title">Hablemos</h2>
+    <h2 class="section-title" id="contact-title">Hablemos</h2>
 
     <p class="contact-intro">
       Si tienes un proyecto interesante, una oportunidad o simplemente quieres
@@ -445,6 +451,8 @@
 
   <!-- ─── Back to top ─── -->
   <button id="back-to-top" aria-label="Volver arriba">↑</button>
+
+  </main>
 
   <script src="script.js"></script>
 </body>

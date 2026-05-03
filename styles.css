@@ -10,7 +10,7 @@
   --bg-soft:    #11131a;
   --border:     #1f222e;
   --text:       #e4e6e8;
-  --muted:      #5a6070;
+  --muted:      #888892;
   --accent:     #00d4aa;
   --accent-dim: #00d4aa15;
   --secondary:  #ff6b35;
@@ -24,14 +24,14 @@
 
 /* ─── Light theme ─── */
 [data-theme="light"] {
-  --bg:         #f0f2f0;
-  --bg-soft:    #e5e7e5;
-  --border:     #c8ccc8;
+  --bg:         #f4f5f4;
+  --bg-soft:    #e8e9e8;
+  --border:     #b8bab8;
   --text:       #0d0f0d;
-  --muted:      #6a706a;
-  --accent:     #008f6b;
-  --accent-dim: #008f6b12;
-  --secondary:  #e55a2b;
+  --muted:      #5a5e5a;
+  --accent:     #007a5e;
+  --accent-dim: #007a5e12;
+  --secondary:  #d55426;
 }
 
 [data-theme="light"] nav.scrolled {
@@ -131,8 +131,52 @@ a {
   text-decoration: none;
 }
 
+/* Focus visible para navegación por teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Ocultar outline pero mantener accesibilidad */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 ul {
   list-style: none;
+}
+
+/* Skip link para accesibilidad */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: var(--bg);
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  z-index: 200;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+  outline: none;
+}
+
+/* Respetar preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ─── Navbar ─── */
@@ -328,17 +372,6 @@ section {
   color: var(--muted);
   font-weight: 400;
   margin-bottom: 40px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.hero-role::before {
-  content: '//';
-  color: var(--accent);
-  font-family: monospace;
-  font-size: 0.9rem;
-  opacity: 0.7;
 }
 
 .hero-desc {
