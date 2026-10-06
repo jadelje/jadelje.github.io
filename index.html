@@ -35,7 +35,7 @@
     "@type": "Person",
     "name": "Javier Delgado",
     "url": "https://jadelje.github.io/",
-    "jobTitle": "Ingeniero de Infraestructura & Cloud",
+    "jobTitle": "Arquitecto Cloud & DevOps Engineer",
     "worksFor": {
       "@type": "Organization",
       "name": "Mayasoft SAS"
@@ -51,7 +51,7 @@
       "https://github.com/jadelje",
       "https://www.linkedin.com/in/jadeljer/"
     ],
-    "knowsAbout": ["AWS", "Linux", "Docker", "Jenkins", "CI/CD", "Prometheus", "Grafana", "Nginx", "VPN", "Firewall", "Ciberseguridad"]
+    "knowsAbout": ["AWS", "Terraform", "Kubernetes", "Amazon EKS", "Docker", "ArgoCD", "GitHub Actions", "GitOps", "CI/CD", "Linux", "Cloudflare", "Prometheus", "Grafana", "Ciberseguridad"]
   }
   </script>
 
@@ -155,18 +155,20 @@
     <p class="skills-heading">Tecnologías & habilidades</p>
     <div class="skills-list">
       <span class="skill-tag">AWS</span>
-      <span class="skill-tag">Linux</span>
+      <span class="skill-tag">Terraform</span>
+      <span class="skill-tag">Kubernetes / EKS</span>
       <span class="skill-tag">Docker</span>
-      <span class="skill-tag">Jenkins</span>
-      <span class="skill-tag">Python</span>
+      <span class="skill-tag">ArgoCD</span>
+      <span class="skill-tag">GitHub Actions</span>
+      <span class="skill-tag">Linux</span>
+      <span class="skill-tag">Cloudflare</span>
+      <span class="skill-tag">CI/CD</span>
+      <span class="skill-tag">GitOps</span>
       <span class="skill-tag">Prometheus</span>
       <span class="skill-tag">Grafana</span>
-      <span class="skill-tag">Nginx</span>
       <span class="skill-tag">Firewall / VPN</span>
-      <span class="skill-tag">CI/CD</span>
       <span class="skill-tag">Ciberseguridad</span>
       <span class="skill-tag">Monitoreo</span>
-      <span class="skill-tag">Autogestión</span>
       <span class="skill-tag">Liderazgo</span>
     </div>
 
@@ -200,6 +202,59 @@
       <li class="project-item">
         <div class="project-body">
           <p class="project-number">01</p>
+          <h3 class="project-name">Migración Cloud OVHcloud → AWS</h3>
+          <p class="project-desc">
+            Diseño y ejecución de la migración completa de infraestructura desde OVHcloud hacia AWS.
+            Plataforma construida con Terraform, Amazon EKS, ECR, RDS, ALB, ACM y ArgoCD.
+            CI/CD con GitHub Actions + OIDC, GitOps y gestión de ambientes staging/producción.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">AWS</span>
+            <span class="project-tag">Terraform</span>
+            <span class="project-tag">Kubernetes / EKS</span>
+            <span class="project-tag">ArgoCD</span>
+            <span class="project-tag">GitHub Actions</span>
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">Cloudflare</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/jadelje" target="_blank" class="project-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </li>
+
+      <li class="project-item">
+        <div class="project-body">
+          <p class="project-number">02</p>
+          <h3 class="project-name">Plataforma GitOps con ArgoCD</h3>
+          <p class="project-desc">
+            Implementación de GitOps sobre Kubernetes con ArgoCD como motor de despliegue.
+            Pipelines en GitHub Actions integrados con AWS mediante OIDC, publicación de imágenes
+            en ECR y sincronización automática de manifiestos hacia Amazon EKS.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">ArgoCD</span>
+            <span class="project-tag">GitHub Actions</span>
+            <span class="project-tag">Amazon EKS</span>
+            <span class="project-tag">Amazon ECR</span>
+            <span class="project-tag">OIDC</span>
+            <span class="project-tag">Kubernetes</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/jadelje" target="_blank" class="project-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </li>
+
+      <li class="project-item">
+        <div class="project-body">
+          <p class="project-number">03</p>
           <h3 class="project-name">Monitoreo y Visualización</h3>
           <p class="project-desc">
             Monitoreo centralizado de servidores mediante Prometheus y Grafana.
@@ -221,7 +276,7 @@
 
       <li class="project-item">
         <div class="project-body">
-          <p class="project-number">02</p>
+          <p class="project-number">04</p>
           <h3 class="project-name">Seguridad de Servidores</h3>
           <p class="project-desc">
             Implementación de firewall, VPN y reglas de iptables para hardening
@@ -244,7 +299,7 @@
 
       <li class="project-item">
         <div class="project-body">
-          <p class="project-number">03</p>
+          <p class="project-number">05</p>
           <h3 class="project-name">Automatización de Backups</h3>
           <p class="project-desc">
             Copias de seguridad automáticas gestionadas con pipelines de Jenkins.
@@ -266,7 +321,7 @@
 
       <li class="project-item">
         <div class="project-body">
-          <p class="project-number">04</p>
+          <p class="project-number">06</p>
           <h3 class="project-name">Despliegue Continuo (CI/CD)</h3>
           <p class="project-desc">
             Pipeline de despliegue automático activado por cada commit en la rama
@@ -288,7 +343,7 @@
 
       <li class="project-item">
         <div class="project-body">
-          <p class="project-number">05</p>
+          <p class="project-number">07</p>
           <h3 class="project-name">Docker — Web Deploy</h3>
           <p class="project-desc">
             Contenedor Docker con Nginx para publicar un sitio web estático.
@@ -310,7 +365,7 @@
 
       <li class="project-item">
         <div class="project-body">
-          <p class="project-number">06</p>
+          <p class="project-number">08</p>
           <h3 class="project-name">Portafolio Personal</h3>
           <p class="project-desc">
             Portafolio personal diseñado y desarrollado desde cero con HTML5, CSS3
@@ -347,9 +402,22 @@
         <h3>Experiencia</h3>
 
         <div class="timeline-item">
+          <h4>Arquitecto Cloud | DevOps Engineer</h4>
+          <p class="org">Lodgerin</p>
+          <p class="period">Nov 2025 — Actual · Remoto</p>
+          <ul>
+            <li>Gestión y optimización de infraestructura cloud: alta disponibilidad, seguridad y escalabilidad.</li>
+            <li>Diseño e implementación de pipelines CI/CD para automatizar flujos de despliegue.</li>
+            <li>Administración de repositorios GitHub con estrategias de branching y revisiones de código.</li>
+            <li>Auditorías técnicas periódicas de rendimiento, seguridad y eficiencia de costes.</li>
+            <li>Soporte transversal a equipos de desarrollo y elaboración de documentación técnica.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
           <h4>Coordinador de Infraestructura</h4>
           <p class="org">Mayasoft SAS</p>
-          <p class="period">2022 — Actual · Santander, Colombia</p>
+          <p class="period">2022 — Oct 2025 · Santander, Colombia</p>
           <ul>
             <li>Administración de activos, inventario y documentación tecnológica.</li>
             <li>Gestión de servidores locales y en la nube con respaldo garantizado.</li>
